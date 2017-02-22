@@ -12,6 +12,7 @@
 		5873EA1D1E5A12E6003CA547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5873EA1B1E5A12E6003CA547 /* Main.storyboard */; };
 		5873EA1F1E5A12E6003CA547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5873EA1E1E5A12E6003CA547 /* Assets.xcassets */; };
 		5873EA221E5A12E6003CA547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5873EA201E5A12E6003CA547 /* LaunchScreen.storyboard */; };
+		58B680891E5DE63D004DD91C /* SSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B680881E5DE63D004DD91C /* SSNotification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5873EA1E1E5A12E6003CA547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5873EA211E5A12E6003CA547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5873EA231E5A12E6003CA547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58B680881E5DE63D004DD91C /* SSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				5873EA171E5A12E6003CA547 /* AppDelegate.swift */,
+				58B680881E5DE63D004DD91C /* SSNotification.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B680891E5DE63D004DD91C /* SSNotification.swift in Sources */,
 				5873EA1A1E5A12E6003CA547 /* ViewController.swift in Sources */,
 				5873EA181E5A12E6003CA547 /* AppDelegate.swift in Sources */,
 			);
@@ -326,6 +330,7 @@
 				5873EA281E5A12E6003CA547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

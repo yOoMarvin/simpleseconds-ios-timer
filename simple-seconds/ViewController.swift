@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func activateTapped(_ sender: Any) {
+        let notification = SSNotification()
+        let content = notification.getContent()
     }
     
     

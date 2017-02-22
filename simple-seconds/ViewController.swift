@@ -25,9 +25,14 @@ class ViewController: UIViewController {
     @IBAction func activateTapped(_ sender: Any) {
         let notification = SSNotification()
         let content = notification.getContent()
+        let trigger = notification.getTimeTrigger(forSeconds: getSeconds())
     }
     
     
+    
+    private func getSeconds () -> Int {
+        return Int(secondsSlider.value)
+    }
     
     
     override func viewDidLoad() {

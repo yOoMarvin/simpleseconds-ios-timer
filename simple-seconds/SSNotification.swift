@@ -10,6 +10,15 @@ import Foundation
 import UserNotifications
 
 class SSNotification {
+    
+    func getTimeTrigger(forSeconds: Int) -> UNTimeIntervalNotificationTrigger {
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(forSeconds), repeats: false)
+        
+        return trigger
+    }
+    
+    
+    
     func getContent() -> UNMutableNotificationContent{
     
         let content = UNMutableNotificationContent()

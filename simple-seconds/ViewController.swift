@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondsSlider: UISlider!
     
     @IBAction func sliderChanged(_ sender: Any) {
+        let seconds = Int(secondsSlider.value)
+        secondsLabel.text = "\(seconds)"
     }
     
     @IBAction func activateTapped(_ sender: Any) {
@@ -27,7 +30,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) { (granted, error) in
+            if granted {
+                print("Notifcations allowed")
+            }
+            
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        }
     }
 
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58536D7D1E5F52E700B3E550 /* ViewController+NotificationCenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58536D7C1E5F52E700B3E550 /* ViewController+NotificationCenterDelegate.swift */; };
 		5873EA181E5A12E6003CA547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873EA171E5A12E6003CA547 /* AppDelegate.swift */; };
 		5873EA1A1E5A12E6003CA547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873EA191E5A12E6003CA547 /* ViewController.swift */; };
 		5873EA1D1E5A12E6003CA547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5873EA1B1E5A12E6003CA547 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58536D7C1E5F52E700B3E550 /* ViewController+NotificationCenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+NotificationCenterDelegate.swift"; sourceTree = "<group>"; };
 		5873EA141E5A12E6003CA547 /* simple-seconds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple-seconds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5873EA171E5A12E6003CA547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5873EA191E5A12E6003CA547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				5873EA191E5A12E6003CA547 /* ViewController.swift */,
+				58536D7C1E5F52E700B3E550 /* ViewController+NotificationCenterDelegate.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				58B680891E5DE63D004DD91C /* SSNotification.swift in Sources */,
 				5873EA1A1E5A12E6003CA547 /* ViewController.swift in Sources */,
 				5873EA181E5A12E6003CA547 /* AppDelegate.swift in Sources */,
+				58536D7D1E5F52E700B3E550 /* ViewController+NotificationCenterDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

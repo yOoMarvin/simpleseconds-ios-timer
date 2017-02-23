@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		58536D7D1E5F52E700B3E550 /* ViewController+NotificationCenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58536D7C1E5F52E700B3E550 /* ViewController+NotificationCenterDelegate.swift */; };
+		58536D801E5F5CB700B3E550 /* timer_attachment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58536D7F1E5F5CB700B3E550 /* timer_attachment.jpg */; };
 		5873EA181E5A12E6003CA547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873EA171E5A12E6003CA547 /* AppDelegate.swift */; };
 		5873EA1A1E5A12E6003CA547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5873EA191E5A12E6003CA547 /* ViewController.swift */; };
 		5873EA1D1E5A12E6003CA547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5873EA1B1E5A12E6003CA547 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		58536D7C1E5F52E700B3E550 /* ViewController+NotificationCenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+NotificationCenterDelegate.swift"; sourceTree = "<group>"; };
+		58536D7F1E5F5CB700B3E550 /* timer_attachment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timer_attachment.jpg; sourceTree = "<group>"; };
 		5873EA141E5A12E6003CA547 /* simple-seconds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple-seconds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5873EA171E5A12E6003CA547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5873EA191E5A12E6003CA547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58536D7E1E5F5C9600B3E550 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				5873EA231E5A12E6003CA547 /* Info.plist */,
+				58536D7F1E5F5CB700B3E550 /* timer_attachment.jpg */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
 		5873EA0B1E5A12E5003CA547 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +69,10 @@
 		5873EA161E5A12E6003CA547 /* simple-seconds */ = {
 			isa = PBXGroup;
 			children = (
+				58536D7E1E5F5C9600B3E550 /* resources */,
 				5873EA2D1E5A1AEB003CA547 /* controller */,
 				5873EA2C1E5A1AE5003CA547 /* view */,
 				5873EA2A1E5A1AC3003CA547 /* model */,
-				5873EA231E5A12E6003CA547 /* Info.plist */,
 			);
 			path = "simple-seconds";
 			sourceTree = "<group>";
@@ -154,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58536D801E5F5CB700B3E550 /* timer_attachment.jpg in Resources */,
 				5873EA221E5A12E6003CA547 /* LaunchScreen.storyboard in Resources */,
 				5873EA1F1E5A12E6003CA547 /* Assets.xcassets in Resources */,
 				5873EA1D1E5A12E6003CA547 /* Main.storyboard in Resources */,

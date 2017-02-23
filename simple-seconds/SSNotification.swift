@@ -27,6 +27,14 @@ class SSNotification {
         content.body = "Dude! You have the perfect tea now! We are ready!"
         //content.badge = 1
         
+        //media
+        guard let attachmentUrl = Bundle.main.url(forResource: "timer_attachment", withExtension: ".jpg") else {
+            return content
+        }
+        if let attachment = try? UNNotificationAttachment(identifier: "timerattachment", url: attachmentUrl, options: .none) {
+            content.attachments = [attachment]
+        }
+        
         return content
     }
 }

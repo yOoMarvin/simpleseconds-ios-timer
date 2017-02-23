@@ -39,7 +39,7 @@ class ViewController: UIViewController {
                 return
             }
             
-            self.present(self.getDialog(), animated: true, completion: nil)
+            self.present(self.getDialog(finished: false), animated: true, completion: nil)
         }
     }
     
@@ -49,8 +49,11 @@ class ViewController: UIViewController {
         return Int(secondsSlider.value)
     }
     
-    private func getDialog () -> UIAlertController {
-        let alert = UIAlertController(title: "Timer started", message: "Your tea countdown started", preferredStyle: .alert)
+    func getDialog (finished: Bool) -> UIAlertController {
+        let title = finished ? "Time's up" : "Timer started"
+        let msg = finished ? "Your tea is ready!" : "Your tea countdown started"
+        
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
         return alert

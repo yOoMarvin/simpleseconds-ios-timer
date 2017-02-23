@@ -13,6 +13,10 @@ extension ViewController: UNUserNotificationCenterDelegate {
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         
-        completionHandler(.alert)
+        let dialog = self.getDialog(finished:true)
+        
+        self.present(dialog, animated: true, completion: nil)
+        
+        //completionHandler(.alert)
     }
 }

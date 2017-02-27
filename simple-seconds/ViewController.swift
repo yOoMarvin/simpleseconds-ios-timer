@@ -24,6 +24,11 @@ class ViewController: UIViewController {
         secondsLabel.text = "\(seconds)"
     }
     
+    
+    
+    
+    // MARK: - Tapped Action
+    
     @IBAction func activateTapped(_ sender: Any) {
         let notification = SSNotification()
         let content = notification.getContent()
@@ -45,6 +50,9 @@ class ViewController: UIViewController {
     
     
     
+    
+    // MARK: - Help functions
+    
     private func getSeconds () -> Int {
         return Int(secondsSlider.value)
     }
@@ -60,6 +68,8 @@ class ViewController: UIViewController {
     }
     
     
+    
+    // MARK: - View did Load function
     override func viewDidLoad() {
         super.viewDidLoad()
         
